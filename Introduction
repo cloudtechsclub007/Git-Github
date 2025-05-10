@@ -1,3 +1,46 @@
-Introduction to git
+Introduction to Git
 
 Git is a software configuration management tool, also known as a source code management (SCM) tool. SCM tools help track and manage changes to code over time. There are two main types of source code management systems: Centralized Version Control Systems (CVCS) and Distributed Version Control Systems (DVCS). Git belongs to the distributed category, allowing every developer to have a full copy of the project repository.
+
+Centralized version control system
+In a Centralized Version Control System, all version history and files are stored in a single central server. Developers work by connecting to this server to pull and push changes, meaning collaboration relies on constant access to the central repository.
+
+Benefits
+- It is easy to understand and get started.
+- You have more control over users and access ( since it is served from one place ).
+
+Drawbacks
+- Dependent on access to the server.
+- Hard to manage a server and backups.
+- It can be slower because every command connects to the server.
+- Branching and merging tools are difficult to use.
+
+Distributed version control system
+In a distributed version control system, each contributor has a local copy—or “clone”—of the central repository. This means every user maintains their own complete local repository, which includes all the files and metadata from the main repository.
+
+Stages of git and its terminology
+
+Workspace: Where you work on your files (modified, untracked).
+Staging Area: Where you prepare changes before committing.
+Local Repository: Where Git stores the history of your commits.
+
+To understand how Git works, think of it like this:
+- Your workspace is like your room, where you have all your clothes — this represents the files you're actively working on in your project.
+- The staging area is like a suitcase where you pack the clothes you plan to take on a trip — these are the files you've selected to commit.
+- The local repository is like your travel destination — once the files are committed, they’re safely stored there, and you can access or revisit them anytime.
+
+GIT Terminologies
+Repository:A repository is a storage location for your project’s source code, including its entire version history and related metadata. It functions like a project folder, either on your local machine or a remote server.Examples:
+- Local repository (e.g., Git on your machine)
+- Remote repository (e.g., hosted on platforms like GitHub or GitLab)
+
+Server:A server hosts remote repositories and manages associated metadata such as commit IDs, tags, branches, and contributor history. It enables collaboration by allowing multiple users to access and contribute to the same codebase.
+
+Working Directory / Workspace:The working directory is the area where files are physically visible and actively modified. It reflects the current state of a specific branch you are working on, allowing you to add, edit, or remove files before staging and committing them.
+
+Key Features of Git
+Free and Open Source: Git is freely available and open source, making it accessible to individuals and organizations without licensing costs.
+Fast and Lightweight: Git performs most operations locally, such as committing, branching, and viewing history. This local execution results in high speed and minimal latency.
+Security: Git ensures data integrity by using a cryptographic hashing algorithm (SHA-1) to uniquely identify every object (such as commits and files) in the repository. This prevents tampering and ensures consistent tracking of changes.
+No Need for High-End Hardware: Since Git operations are efficient and primarily local, it does not require powerful hardware or always-on internet connectivity.
+Efficient Branching: Creating a new branch in Git is quick and efficient. Git uses lightweight pointers, so branches are created without duplicating the entire codebase, enabling seamless experimentation and parallel development.
