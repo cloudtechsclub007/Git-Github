@@ -1,0 +1,3 @@
+Introduction to git
+
+Git is a software configuration management tool, also known as a source code management (SCM) tool. SCM tools help track and manage changes to code over time. There are two main types of source code management systems: Centralized Version Control Systems (CVCS) and Distributed Version Control Systems (DVCS). Git belongs to the distributed category, allowing every developer to have a full copy of the project repository.
